@@ -39,14 +39,9 @@ public class UsuarioDAO {
     public void desconectar() throws SQLException {
         conexion.close();
     }
-    public void nombreUsuario(Usuario user) throws SQLException {
-        String sql = "SELECT nombre FROM USUARIOS ";
-    }
-    public void emailUsuario(Usuario user) throws SQLException{
-        String sql ="SELECT email FROM USUARIOS";
-    }
-    public void passUsuario(Usuario user) throws SQLException{
-        String sql="SELECT pass FROM USUARIOS";
+    public void checkBDUsuario() throws SQLException{
+        String sql="SELECT nombre, email, pwd FROM USUARIOS";
+        
     }
     
 }
